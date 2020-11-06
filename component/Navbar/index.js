@@ -1,47 +1,66 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Box, Flex, Button, Heading, Link, Image, List } from '@chakra-ui/core';
+import React, {  useState } from 'react';
+import NextLink from 'next/link';
+import { Box, Flex, Button, Image, Heading, Link } from '@chakra-ui/core';
+import {GiHamburgerMenu} from 'react-icons/gi';
 
 const NavLink = ({ children, ...props }) => (
-  <Link mt={{ base: 4, md: 0 }} mr={6} display="block" fontSize={"xl"} fontWeight="medium" lineHeight="xl" color="gray.600" {...props}>
+  <Link
+    mt={{ base: 4, md: 0 }}
+    mr={6}
+    display="block"
+    fontSize={'xl'}
+    fontWeight="medium"
+    lineHeight="xl"
+    {...props}
+  >
     {children}
   </Link>
 );
 
-const NavBar = props => {
-  const [show, setShow] = React.useState(false);
+const NavBar = (props) => {
+  const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
+
   return (
     <Flex
       as="nav"
+      w="90%"
+      mx="auto"
       my="60px"
       align="center"
-      justifyContent="space-between"
+      justify="space-between"
+      wrap="wrap"
+      padding="1rem"
       top="0"
+      height={['auto', 'auto', '80px', '80px']}
+      zIndex="1"
       {...props}
     >
       <Flex mr={5} align="center">
-        <Heading as="h1" size="lg">
-          <Image
-            position="relative"
-            src="/logo.png"
-            w="120px"
-            h="40px"
-            margin="auto"
-          />
-        </Heading>
+        <Image
+          w={['200px', '160px', '160px', '180px']}
+          src="/logo.png"
+        />
       </Flex>
-      
+
+      <Box display={{ sm: 'block', md: 'none' }} onClick={handleToggle}>
+       <GiHamburgerMenu size="1.5rem"/>
+      </Box>
 
       <Box
-        display="flex"
-        width={{ sm: "full", md: "auto" }}
+        display={{ sm: show ? 'block' : 'none', md: 'flex' }}
+        width={{ sm: 'full', md: 'auto' }}
         alignItems="center"
       >
-        <NavLink href="">About</NavLink>
-        <NavLink href="about">Diversity</NavLink>
-        <NavLink href="about">Event</NavLink>
-        <NavLink href="about">ContactUs</NavLink>
+        <NextLink href="/">
+          <NavLink>About</NavLink>
+        </NextLink>
+        <NextLink href="">
+          <NavLink>Event</NavLink>
+        </NextLink>
+        <NextLink href="">
+          <NavLink>Group of Communities</NavLink>
+        </NextLink>
       </Box>
     </Flex>
   );

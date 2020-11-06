@@ -1,17 +1,30 @@
 import React from 'react';
-import {Grid, Text, Box, Image, Heading} from '@chakra-ui/core';
+import {Grid, Text, Box, Image, Heading, Button} from '@chakra-ui/core';
+import {FaDiscord} from 'react-icons/fa';
 
 const About = () =>{
     return(
-            <Grid templateColumns="repeat(2,1fr)" justifyContent="space-between" py="50px">
-                <Box>
-                    <Image src="MainBg.png"/>
-                </Box>
-                <Box  px="50px" >
-                    <Heading fontSize="4xl" fontWeight="bold" fontColor="cyan.100" align="center" py="20px">
-                        Who We Are
+            <Grid templateColumns={{sm:"repeat(1,1fr)", md:"repeat(2,1fr)"}} justifyContent="space-between" py="50px">
+                <Box  w="100%"  >
+                    <Heading  
+                        fontSize={['5xl', '5xl', '5xl', '6xl']} lineHeight="none" fontWeight="bold" color="#000000" align="left" py="20px">
+                        We never grow alone, but always with a 
                     </Heading>
-                    <Text fontSize="xl" fontColor="gray.100">Emisha is a non-profit tech community, that runs Free workshops, Special events, Seminars, Hackathon, Coding competitions etc. It also offers valuable leadership experiences, connections to professional organizations, networking opportunities, and special events that mold a student’s perspective and power of virtualization– during the college years and beyond. Our comunity is open to everyone who has a williingness to learn and passionate about tech. We also welcome those students who don't even belong to computer science so that can be a part of diverse network. </Text>
+                     <Heading
+                        fontSize={['5xl', '5xl', '5xl', '6xl']}
+                        fontWeight="bold"
+                        color="blue"
+                        as="u"
+                    >
+                        Community.
+                    </Heading>
+                    <Text fontSize={["2xl","2xl","xl","2xl"]} fontWeight="medium" color="#000000">
+                        At Emisha, We thrive to create a true community where everyone can grow together.
+                    </Text>
+                    <Button  size="lg" color="#ffffff"  my="20px" backgroundColor="blue" rightIcon={<FaDiscord size="2rem"/>}>Join us on Discord </Button>
+                </Box>
+                <Box  w={["none", "none","90%","90%"]}>
+                    <Image src="MainBg.png"/>
                 </Box>
             </Grid>
     );
