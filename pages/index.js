@@ -4,6 +4,7 @@ import About from '../component/About'
 import Diversity from '../component/Diversity'
 import Navbar from '../Component/Navbar'
 import Event from '../component/Event'
+import Footer from '../component/Footer'
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
         <About/>
       <Heading fontSize={["md","lg","2xl","5xl"]} align="center" fontWeight="bold">Our Past Events</Heading>
         <Event/>
+        <Footer/>
       </Flex>
+      
       </>
   )
 }

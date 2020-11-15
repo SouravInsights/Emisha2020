@@ -38,7 +38,7 @@ const NavBar = (props) => {
     >
       <Flex mr={5} align="center">
         <Image
-          w={['200px', '160px', '160px', '180px']}
+          w={['140px', '140px', '160px', '160px']}
           src="/logo.png"
         />
       </Flex>
