@@ -1,11 +1,11 @@
 import { Flex, Box, Heading } from '@chakra-ui/core'
 import Head from 'next/head'
 import About from '../component/About'
-import Diversity from '../component/Diversity'
 import Navbar from '../Component/Navbar'
-import Event from '../component/Event'
 import Footer from '../component/Footer'
+import Event from '../component/Eventcard/index'
 
+ 
 export default function Home() {
   return (
     <>
@@ -19,7 +19,6 @@ export default function Home() {
         <Event/>
         <Footer/>
       </Flex>
-      
       </>
   )
 }

@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-import {Text, Box, Heading,Image, Button,VStack,HStack,Stack,Avatar, Flex, position} from '@chakra-ui/core';
+import {Text, Box, Heading,Image, Button,VStack,HStack,Stack,Avatar, Flex, } from '@chakra-ui/core';
 const eventdata=[
   {
           id:1,
           url:"/Blogbanner1.png",
           title:"UtkalHacks2.0",
            date: "22nd november",
-          mode:"online"
+          mode:"online",
  },
   {
-          id:1,
+          id:2,
           url:"/Blogbanner1.png",
           title:"UtkalHacks2.0",
            date: "22nd november",
           mode:"online"
  },
   {
-          id:1,
+          id:3,
           url:"/Blogbanner1.png",
           title:"UtkalHacks2.0",
            date: "22nd november",
           mode:"online"
  },
   {
-          id:1,
+          id:4,
           url:"/Blogbanner1.png",
           title:"UtkalHacks2.0",
            date: "22nd november",
@@ -35,14 +35,14 @@ const eventdata=[
 const Eventcard=({url,title,mode,date,})=>{
   return(
        <Box 
-  w="332px"
+  w="300px"
   m="10px"
   background= "#FFFFFF" 
   border= "1px solid #DED9D9"
   boxShadow= "lg"
   borderRadius= "10px"
  >
-   <Image w="100%" height="182px"  borderRadius= "10px"src={url} />
+   <Image w="100%" height="152px"  borderRadius= "10px"src={url} />
    <Box px="30px" py="15px">
     <VStack spacing="5px">
       <Text font-weight="500" font-size="8px">
@@ -78,32 +78,17 @@ const Eventcard=({url,title,mode,date,})=>{
 }
 
 
-const Event = (props) => {
-  const [currentCard, setCard ] = useState(0);
-  const [position, setPosition]=useState(0);
-  
-  const handleclickprev = () => {
-    if(currentCard === 0) {
-      return console.log("No previous cards");
-    } elseif(currentCard===position) {
-       setCard = (setPosition(position-1));  
-      
-    }
-  } 
-  const handelclicknext = () => {
-    setCard=(setPosition(position+1));
-    position=setPosition;
-  }
+const Event = () => {
  
   return (
     <Flex direction="row" my="20px" alignItems="center"   justifyContent="space-between" >
-          <Button onClick={handleclickprev()}>Prev</Button>
+          <Button>Prev</Button>
           <Flex direction="row" overflow="auto" mx="10px">
               {eventdata.map((data)=>(
                 <Eventcard url={data.url} title={data.title} mode={data.mode} date={data.date}/>
               ))}
           </Flex>
-          <Button onClick={handelclicknext()}>Next</Button>
+          <Button >Next</Button>
 
     </Flex>
   );
