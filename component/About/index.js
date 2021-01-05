@@ -21,7 +21,7 @@ const About = () =>{
                     <Text fontSize={["2xl","2xl","xl","2xl"]} fontWeight="medium" color="#000000">
                         At Emisha, We thrive to create a true community where everyone can grow together.
                     </Text>
-                    <Button  size="lg" color="#ffffff"  my="20px" backgroundColor="blue" rightIcon={<FaDiscord size="2rem"/>}>Join us on Discord </Button>
+                    <Button  size="lg" color="#ffffff" _hover={{ bg: "blue" }} _active={{borderColor: ""}} my="20px" backgroundColor="blue" rightIcon={<FaDiscord size="2rem"/>}>Join us on Discord </Button>
                 </Box>
                 <Box  w={["none", "none","90%","90%"]}>
                     <Image src="MainBg.png"/>

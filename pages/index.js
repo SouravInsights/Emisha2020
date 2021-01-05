@@ -4,6 +4,7 @@ import About from '../component/About'
 import Navbar from '../Component/Navbar'
 import Footer from '../component/Footer'
 import Event from '../component/Eventcard/index'
+import Newsletter from '../component/Newslettersection'
 
  
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <About/>
       <Heading fontSize={["md","lg","2xl","5xl"]} align="center" fontWeight="bold">Our Past Events</Heading>
         <Event/>
+        <Newsletter/>
         <Footer/>
       </Flex>
       </>
