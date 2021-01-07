@@ -1,7 +1,7 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import NextLink from 'next/link';
 import { Box, Flex, Button, Image, Heading, Link } from '@chakra-ui/core';
-import {GiHamburgerMenu} from 'react-icons/gi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const NavLink = ({ children, ...props }) => (
   <Link
@@ -39,12 +39,12 @@ const NavBar = (props) => {
       <Flex mr={5} align="center">
         <Image
           w={['140px', '140px', '160px', '160px']}
-          src="/logo.png"
+          src="/Emisha.svg"
         />
       </Flex>
 
       <Box display={{ sm: 'block', md: 'none' }} onClick={handleToggle}>
-       <GiHamburgerMenu size="1.5rem"/>
+        <GiHamburgerMenu size="1.5rem" />
       </Box>
 
       <Box

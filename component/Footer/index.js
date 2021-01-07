@@ -1,36 +1,36 @@
 import React from "react";
-import { Flex, Box, Text, Link, Icon,Image } from "@chakra-ui/core";
+import { Flex, Box, Text, Link, Icon, Image } from "@chakra-ui/core";
 import { FaTwitter, FaGithub, FaLinkedin, } from "react-icons/fa";
 
-const FooterLink = ({icon, href, label})=>(
-  
-        <Link  mr="20px" href={href} aria-label={label} isexternal>
-          <Icon as={icon} boxSize={8} />
-        </Link>
+const FooterLink = ({ icon, href, label }) => (
+
+  <Link mr="20px" href={href} aria-label={label} isexternal>
+    <Icon as={icon} boxSize={8} />
+  </Link>
 
 )
-const links=[
+const links = [
   {
     icon: FaTwitter,
-    label:"Twitter",
-    href : "https://twitter.com/howdyashis",
+    label: "Twitter",
+    href: "https://twitter.com/howdyashis",
   },
   {
-    icon : FaGithub,
-    label : "Github",
-    href : "https://github.com/ashiskumar-1999"
+    icon: FaGithub,
+    label: "Github",
+    href: "https://github.com/ashiskumar-1999"
   },
   {
     icon: FaLinkedin,
     label: "LinkedIn",
-    href : "https://www.linkedin.com/in/ashis-kumar-35385b160/",
+    href: "https://www.linkedin.com/in/ashis-kumar-35385b160/",
   }
 
 ]
 
 const Footer = (props) => {
   return (
-       <Flex
+    <Flex
       w="90%"
       mx="auto"
       my="60px"
@@ -43,16 +43,16 @@ const Footer = (props) => {
       zIndex="1"
       {...props}
     >
-        <Box  w="160px">
-            <Image src="/logo.png"/>
-        </Box>
+      <Box w="160px">
+        <Image src="/Emisha.svg" />
+      </Box>
       <Box align="center">
-         {links.map((link) => (
-          <FooterLink  key = {link.href} {...link}/>
+        {links.map((link) => (
+          <FooterLink key={link.href} {...link} />
         ))}
-      <Text fontWeight="bold" fontSize="lg"my="10px">©2020 Emisha, all copyright reserved.</Text>
-        </Box>
-   </Flex>
+        <Text fontWeight="bold" fontSize="lg" my="10px">©2020 Emisha, all copyright reserved.</Text>
+      </Box>
+    </Flex>
   );
 };
 
