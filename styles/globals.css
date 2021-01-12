@@ -14,3 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* .about {
+  position: relative;
+}
+.about::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-color: #f00fff;
+  background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610298961/coverbg_EMISHA.svg);
+} */

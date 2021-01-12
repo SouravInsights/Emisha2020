@@ -114,6 +114,43 @@
   height: 1em;
 }
 
+.bimage {
+  position: relative;
+}
+.bimage::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-color: #f00fff;
+  background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610298961/coverbg_EMISHA.svg);
+}
+
+.bimageleft {
+  position: relative;
+}
+.bimageleft::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  height: 98px;
+  width: 98px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-color: #f00fff;
+  background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610367770/Emisha%202021/Round_kwvjxi.svg);
+}
+
+.kadali {
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -11,7 +11,7 @@ const CardHeader = ({ date, title, mode, }) => {
         {title}
       </Heading>
       <Box>
-        <Tag size="sm" /* variant="solid" */ fontFamily="sans-serif" fontWeight="medium" lineHeight="normal" fontSize="xs" colorScheme="teal">
+        <Tag size="sm" fontFamily="sans-serif" fontWeight="medium" lineHeight="normal" fontSize="xs" colorScheme="teal">
           {mode}
         </Tag>
       </Box>

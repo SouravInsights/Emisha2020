@@ -1,0 +1,44 @@
+<svg width="1440" height="721" viewBox="0 0 1440 721" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M0 721H1440" stroke="#CCCCCC"/>
+<path d="M0 649H1440" stroke="#CCCCCC"/>
+<path d="M0 577H1440" stroke="#CCCCCC"/>
+<path d="M0 505H1440" stroke="#CCCCCC"/>
+<path d="M0 434H1440" stroke="#CCCCCC"/>
+<path d="M0 361H1440" stroke="#CCCCCC"/>
+<path d="M0 289H1440" stroke="#CCCCCC"/>
+<path d="M0 217H1440" stroke="#CCCCCC"/>
+<path d="M865 145L1440 145" stroke="#CCCCCC"/>
+<path d="M-1 145H145" stroke="#CCCCCC"/>
+<path d="M936 73L1440 73" stroke="#CCCCCC"/>
+<path d="M0 73H145" stroke="#CCCCCC"/>
+<path d="M1009 1L1440 1" stroke="#CCCCCC"/>
+<path d="M0 1L72 1.00001" stroke="#CCCCCC"/>
+<path d="M72 1V937" stroke="#CCCCCC"/>
+<path d="M0 1L3.93403e-05 937" stroke="#CCCCCC"/>
+<path d="M145 73V937" stroke="#CCCCCC"/>
+<path d="M218 217L217 937" stroke="#CCCCCC"/>
+<path d="M286 217L288 937" stroke="#CCCCCC"/>
+<path d="M363 217L361 937" stroke="#CCCCCC"/>
+<path d="M431 217L432 937" stroke="#CCCCCC"/>
+<path d="M505 217V937.001" stroke="#CCCCCC"/>
+<path d="M580 217L576 937" stroke="#CCCCCC"/>
+<path d="M650 217L648 937" stroke="#CCCCCC"/>
+<path d="M720 217L721 937" stroke="#CCCCCC"/>
+<path d="M791 217L792 937" stroke="#CCCCCC"/>
+<path d="M865 145V937" stroke="#CCCCCC"/>
+<path d="M936 73V937" stroke="#CCCCCC"/>
+<path d="M1009 1V937" stroke="#CCCCCC"/>
+<path d="M1080 1V937" stroke="#CCCCCC"/>
+<path d="M1152 1V937" stroke="#CCCCCC"/>
+<path d="M1224 1V937" stroke="#CCCCCC"/>
+<path d="M1296 1V937" stroke="#CCCCCC"/>
+<path d="M1368 1V937" stroke="#CCCCCC"/>
+<path d="M1440 1V937" stroke="#CCCCCC"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1440" height="721" fill="white"/>
+</clipPath>
+</defs>
+</svg>

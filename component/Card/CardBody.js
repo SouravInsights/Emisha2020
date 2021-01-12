@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Stack, Avatar, Box } from '@chakra-ui/core'
+import { Box } from '@chakra-ui/core'
 
 const CardBody = ({ children }) => {
   return (

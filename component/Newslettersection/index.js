@@ -1,23 +1,25 @@
 import React from 'react'
-import { Box, Flex, Text, Heading, Input, Button, HStack, FormControl } from '@chakra-ui/core'
+import { Flex, Text, Heading, Input, Button, HStack, FormControl } from '@chakra-ui/core'
 
 const Newsletter = () => {
     return (
         <Flex
-            /* w={"60%"} */
-            h="250px"
-            m="auto"
+            zIndex="1"
+            px="80px"
+            py="30px"
+            m="20px"
             bg="blue"
-            borderRadius="10px"
+            borderRadius="20px"
             justify="center"
             align="center"
             flexDirection="column"
+            boxShadow="2xl"
         >
 
             <Heading
                 fontWeight="extrabold"
-                lineHeight={['shorter', 'short', 'normal', 'base']}
-                fontSize={['lg', '3xl', '5x1']}
+                lineHeight={['normal', 'normal', 'normal', 'normal']}
+                fontSize={['2xl', '3xl', '42px', '42px']}
                 textAlign="center"
                 color="#ffffff"
                 pb="10px"
@@ -27,33 +29,27 @@ const Newsletter = () => {
             <Text
                 fontWeight="normal"
                 color="#ffffff"
-                lineHeight="shorter"
+                lineHeight="tall"
                 fontSize={['sm', 'lg', 'xl', '2xl']}
-                w={['100%', '80%', '80%', '50%']}
+                w={['100%', '80%', '80%', '80%']}
                 textAlign="center"
                 pb="10px"
             >
-                We want to enable everyone to come together and share experiences with a wider community. Let’s make an impact together.</Text>
+                We want to enable everyone to come together and share experiences with a wider community. Let’s make an impact together.
+           </Text>
             <HStack
-                mt="10px"
-                justify="space-between"
+                pt="10px"
+                align="center"
+                spacing={4}
             >
-                <FormControl id="email">
-                    <Input placeholder="example@gmail.com" backgroundColor="#ffffff" />
+                <FormControl id="email" >
+                    <Input placeholder="example@gmail.com" borderRadius="10px" backgroundColor="#ffffff" />
                 </FormControl>
                 <Button
-                    as="button"
-                    w="180px"
-                    py={2}
-                    px={4}
-                    ml={4}
-                    alignItems="center"
-                    borderRadius="12px"
-                    fontWeight="semibold"
-                    backgroundColor="#ffffff"
+                    size="lg"
+                    colorScheme="gray"
                     outline="none"
-                    _hover={{ backgroundColor: "#63B3ED" }}
-                    _active={{ backgroundColor: "#ffffff" }}
+                    borderRadius="10px"
                 >
                     Subscribe
                  </Button>

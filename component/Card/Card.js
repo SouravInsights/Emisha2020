@@ -1,12 +1,13 @@
-import React from 'react';
-import { Image, Box, Divider, Text, Heading } from '@chakra-ui/core'
-import CardHeader from './CardHeader';
+import React, { Children } from 'react';
+import { Image, Box, Divider } from '@chakra-ui/core'
+/* import CardHeader from './CardHeader';
 import CardBody from './CardBody';
-import CardFooter from './CardFooter';
+import CardFooter from './CardFooter'; */
 
-const Card = ({ header, body, footer, url, ...props }) => {
+const Card = ({ children, header, body, footer, coverImage, ...props }) => {
   return (
     <Box
+      zIndex="1"
       maxW="332px"
       m="10px"
       background="#FFFFFF"
@@ -14,13 +15,13 @@ const Card = ({ header, body, footer, url, ...props }) => {
       borderRadius="10px"
       {...props}
     >
-      <Image w="100%" /* borderRadius="10px" */ src={url} />
+      <Image w="100%" /* borderRadius="10px" */ src={coverImage} />
       <Box px="20px" pt="10px" pb="10px" >
         <Box>
           {header}
         </Box>
         <Box>
-          {body}
+          {children}
         </Box>
       </Box>
       <Divider orientation="horizontal" />

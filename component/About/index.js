@@ -1,14 +1,21 @@
 import React from 'react';
 import { Grid, Text, Box, Image, Heading, Button } from '@chakra-ui/core';
-import { FaDiscord, FaArrowRight } from 'react-icons/fa';
-
+import { FaArrowRight } from 'react-icons/fa';
+import styles from '../../styles/styles.module.css';
 
 const About = () => {
     return (
-        <Grid templateColumns={{ sm: "repeat(1,1fr)", md: "repeat(2,1fr)" }} justifyContent="space-between" py="50px">
+
+        <Grid className={styles.bimageleft} zIndex="1" templateColumns={{ sm: "repeat(1,1fr)", md: "repeat(2,1fr)" }} justifyContent="space-between" py="50px">
             <Box w="100%"  >
                 <Heading
-                    fontSize={['5xl', '5xl', '5xl', '6xl']} lineHeight="none" fontWeight="bold" color="#000000" align="left" py="20px">
+                    fontSize={['5xl', '5xl', '5xl', '6xl']}
+                    lineHeight="none"
+                    fontWeight="bold"
+                    color="#000000"
+                    align="left"
+                    py="20px"
+                >
                     We never grow alone, but always with a
                     </Heading>
                 <Heading
@@ -19,10 +26,10 @@ const About = () => {
                 /* pb="10px" */
                 >
                     Community.
-                    </Heading>
+                </Heading>
                 <Text fontSize={["2xl", "2xl", "xl", "2xl"]} fontWeight="medium" color="#000000" pt="20px">
                     At Emisha, We thrive to create a true community where everyone can grow together.
-                    </Text>
+                </Text>
                 <Button
                     size="lg"
                     borderRadius="20px"
@@ -30,12 +37,12 @@ const About = () => {
                     _hover={{ bg: "blue" }}
                     _active={{ borderColor: "" }}
                     my="20px"
-                    boxShadow="dark-lg"
+                    boxShadow="2xl"
                     backgroundColor="blue"
                     rightIcon={<FaArrowRight />}
                 >
                     Join Our Community
-                    </Button>
+                </Button>
             </Box>
             <Box w={["none", "none", "90%", "90%"]}>
                 <Image src="MainBg.png" />
