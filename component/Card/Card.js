@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { Image, Box, Divider } from '@chakra-ui/core'
 /* import CardHeader from './CardHeader';
 import CardBody from './CardBody';
@@ -8,14 +8,15 @@ const Card = ({ children, header, body, footer, coverImage, ...props }) => {
   return (
     <Box
       zIndex="1"
-      maxW="332px"
+      maxH="600px"
+      maxW="280px"
       m="10px"
       background="#FFFFFF"
       boxShadow="lg"
       borderRadius="10px"
       {...props}
     >
-      <Image w="100%" /* borderRadius="10px" */ src={coverImage} />
+      <Image w="100%" maxH="140px" borderTopRadius="10px" /* borderRadius="10px" */ src={coverImage} />
       <Box px="20px" pt="10px" pb="10px" >
         <Box>
           {header}

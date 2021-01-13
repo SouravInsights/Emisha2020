@@ -126,7 +126,7 @@
   background-repeat: no-repeat;
   z-index: 0;
   background-color: #f00fff;
-  background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610298961/coverbg_EMISHA.svg);
+  background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610298961/Emisha%202021/coverbg_EMISHA.svg);
 }
 
 .bimageleft {
@@ -145,15 +145,20 @@
   background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610367770/Emisha%202021/Round_kwvjxi.svg);
 }
 
-.kadali {
-  height: 100px;
-  width: 100px;
-  background-color: #000000;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 4s;
+  transform: scale(1.08);
 }

@@ -15,7 +15,6 @@ const Newsletter = () => {
             flexDirection="column"
             boxShadow="2xl"
         >
-
             <Heading
                 fontWeight="extrabold"
                 lineHeight={['normal', 'normal', 'normal', 'normal']}
@@ -46,8 +45,8 @@ const Newsletter = () => {
                     <Input placeholder="example@gmail.com" borderRadius="10px" backgroundColor="#ffffff" />
                 </FormControl>
                 <Button
-                    size="lg"
-                    colorScheme="gray"
+                    size="md"
+                    bg="white"
                     outline="none"
                     borderRadius="10px"
                 >

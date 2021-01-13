@@ -32,6 +32,7 @@ const Footer = (props) => {
   return (
     <Flex
       w="90%"
+      height={['auto', 'auto', '80px', '80px']}
       mx="auto"
       my="60px"
       align="center"
@@ -39,18 +40,31 @@ const Footer = (props) => {
       wrap="wrap"
       padding="1rem"
       top="0"
-      height={['auto', 'auto', '80px', '80px']}
       zIndex="1"
       {...props}
     >
       <Box w="160px">
         <Image src="/Emisha.svg" />
       </Box>
-      <Box align="center">
-        {links.map((link) => (
-          <FooterLink key={link.href} {...link} />
-        ))}
-        <Text fontWeight="bold" fontSize="lg" my="10px">©2020 Emisha, all copyright reserved.</Text>
+      <Box
+        zIndex="1"
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+      >
+        <Box w={['300px', '350px', '400px', '500px']} align="center">
+          {links.map((link) => (
+            <FooterLink key={link.href} {...link} />
+          ))}
+        </Box>
+        <Text
+          fontWeight="bold"
+          fontSize={['sm', 'sm', 'lg', 'lg']}
+          my="10px"
+          textAlign="center"
+        >
+          Copyright ©2020 Emisha, all copyright reserved.
+        </Text>
       </Box>
     </Flex>
   );

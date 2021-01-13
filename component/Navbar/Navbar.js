@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NextLink from 'next/link';
-import { Box, Flex, Button, Image, Heading, Link } from '@chakra-ui/core';
+import { Box, Flex, Image, Link } from '@chakra-ui/core';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const NavLink = ({ children, ...props }) => (
@@ -31,9 +31,15 @@ const NavBar = (props) => {
       justify="space-between"
       wrap="wrap"
       padding="1rem"
+      bg="white"
+      position="sticky"
       top="0"
+      border="1px solid"
+      borderColor="#313131"
+      borderRadius="20px"
+      boxShadow="2xl"
       height={['auto', 'auto', '80px', '80px']}
-      zIndex="1"
+      zIndex="2"
       {...props}
     >
       <Flex mr={5} align="center">
@@ -59,7 +65,7 @@ const NavBar = (props) => {
           <NavLink>Event</NavLink>
         </NextLink>
         <NextLink href="">
-          <NavLink>Group of Communities</NavLink>
+          <NavLink>Blogs</NavLink>
         </NextLink>
       </Box>
     </Flex>

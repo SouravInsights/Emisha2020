@@ -3,11 +3,19 @@ import { Box, VStack, Text, Heading, Tag } from '@chakra-ui/core'
 
 const CardHeader = ({ date, title, mode, }) => {
   return (
-    <VStack align="normal" spacing="5px">
+    <VStack maxH="180px" align="normal" spacing="3px">
       <Text fontFamily="sans-serif" fontWeight="medium" fontSize="xs" lineHeight="normal" color="#6D6D6D" >
         {date}
       </Text>
-      <Heading fontWeight="bold" fontSize="lg" lineHeight="base" color="#000000" >
+      <Heading
+        maxH="180px"
+        w="180px"
+        isTruncated
+        fontWeight="bold"
+        fontSize="md"
+        lineHeight="base"
+        color="#000000"
+      >
         {title}
       </Heading>
       <Box>

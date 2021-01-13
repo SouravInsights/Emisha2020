@@ -1,6 +1,19 @@
 import { extendTheme } from "@chakra-ui/core";
+import { createBreakpoints } from "@chakra-ui/theme-tools"
+
+const breakpoints = createBreakpoints({
+  sm: "20em",
+  md: "48em",
+  lg: "62em",
+  xl: "80em",
+})
+
+const overrides = {
+  breakpoints,
+}
 
 const theme = extendTheme({
+  overrides,
   styles: {
     global: (props) => ({
       body: {
@@ -119,5 +132,8 @@ const theme = extendTheme({
     "6xl": "72rem"
   }
 });
+
+
+
 
 export default theme;
