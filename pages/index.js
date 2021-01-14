@@ -3,8 +3,8 @@ import { Box, Flex, Button, Icon, IconButton, Heading, Stack, Avatar, Divider } 
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { GraphQLClient } from "graphql-request";
 import Head from 'next/head'
-import About from '../component/About'
-import Navbar from '../component/Navbar/Navbar'
+import About from '../component/About/About'
+import NavBar from '../component/Navbar/Header'
 import Footer from '../component/Footer'
 import Newsletter from '../component/Newslettersection'
 import Card from '../component/Card/Card'
@@ -65,19 +65,18 @@ export default function Home({ events }) {
       <Head>
         <title>Emisha</title>
       </Head>
+      <NavBar />
+
       <Flex
         className={styles.bimage}
         direction="column"
         px={['30px', '30px', '80px', '120px']}
         justifyContent="space-between"
       >
-
-        <Navbar />
-
         <About />
 
         {/* Card section */}
-        <Heading fontSize={["md", "lg", "2xl", "5xl"]} align="center" fontWeight="bold">Our Past Events</Heading>
+        <Heading zIndex="1" fontSize={["md", "lg", "2xl", "5xl"]} align="center" fontWeight="bold">Our Past Events</Heading>
         <Flex zIndex="1" direction="row" my="20px" justifyContent="center"
           alignItems="center" >
           <IconButton

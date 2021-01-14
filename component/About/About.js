@@ -22,7 +22,7 @@ const About = () => {
                     <Heading
                         fontSize={['5xl', '5xl', '5xl', '6xl']}
                         fontWeight="bold"
-                        color="blue"
+                        color="blue.50"
                         as="u"
                     /* pb="10px" */
                     >
@@ -35,11 +35,11 @@ const About = () => {
                         size="lg"
                         borderRadius="20px"
                         color="#ffffff"
-                        _hover={{ bg: "blue" }}
+                        _hover={{ bg: "blue.50" }}
                         _active={{ borderColor: "" }}
                         my="20px"
                         boxShadow="2xl"
-                        backgroundColor="blue"
+                        backgroundColor="blue.50"
                         rightIcon={<FaArrowRight />}
                     >
                         Join Our Community

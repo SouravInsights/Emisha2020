@@ -8,7 +8,7 @@ const Newsletter = () => {
             px="80px"
             py="30px"
             m="20px"
-            bg="blue"
+            bg="blue.50"
             borderRadius="20px"
             justify="center"
             align="center"
@@ -30,7 +30,7 @@ const Newsletter = () => {
                 color="#ffffff"
                 lineHeight="tall"
                 fontSize={['sm', 'lg', 'xl', '2xl']}
-                w={['100%', '80%', '80%', '80%']}
+                /* w={['100%', '80%', '80%', '80%']} */
                 textAlign="center"
                 pb="10px"
             >
@@ -39,6 +39,7 @@ const Newsletter = () => {
             <HStack
                 pt="10px"
                 align="center"
+                columns={{ sm: 2, md: 4 }}
                 spacing={4}
             >
                 <FormControl id="email" >
