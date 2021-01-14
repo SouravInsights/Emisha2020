@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Box, Flex, Button, Icon, IconButton, Heading, Stack, Avatar, Divider } from '@chakra-ui/core'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { Flex, IconButton, Heading, Stack, Avatar } from '@chakra-ui/core'
+import { FaArrowLeft, FaArrowRight, FaDiscord } from 'react-icons/fa';
 import { GraphQLClient } from "graphql-request";
 import Head from 'next/head'
-import About from '../component/About/About'
 import NavBar from '../component/Navbar/Header'
 import Footer from '../component/Footer'
 import Newsletter from '../component/Newslettersection'
@@ -12,6 +11,8 @@ import CardHeader from '../component/Card/CardHeader';
 import CardBody from '../component/Card/CardBody';
 import CardFooter from '../component/Card/CardFooter';
 import styles from '../styles/styles.module.css';
+import Hero from '../component/About/Hero';
+import LandingLayout from '../component/About/LandingLayout';
 
 export async function getStaticProps() {
   const graphcms = new GraphQLClient(
@@ -73,10 +74,30 @@ export default function Home({ events }) {
         px={['30px', '30px', '80px', '120px']}
         justifyContent="space-between"
       >
-        <About />
+
+        {/* About section */}
+        <LandingLayout zIndex="1">
+          <Hero
+            title="We never grow alone, but always with a Community."
+            subtitle="At Emisha, We thrive to create a true community where everyone can grow together."
+            image="https://res.cloudinary.com/emishalabs/image/upload/v1610639213/Emisha%202021/MainBG_rddbwd.png"
+            ctaText="Join Our Community"
+            ctaLink="/"
+            rightIcon={<FaDiscord size="24" />}
+          />
+        </LandingLayout>
 
         {/* Card section */}
-        <Heading zIndex="1" fontSize={["md", "lg", "2xl", "5xl"]} align="center" fontWeight="bold">Our Past Events</Heading>
+        <Heading zIndex="1" as="h1"
+          fontSize={['4xl', '4xl', '4xl', '4xl']}
+          lineHeight="1"
+          fontWeight="extrabold"
+          color="gray.250"
+          textAlign="center"
+          zIndex="2"
+        >
+          Our Past Events
+        </Heading>
         <Flex zIndex="1" direction="row" my="20px" justifyContent="center"
           alignItems="center" >
           <IconButton
@@ -88,9 +109,6 @@ export default function Home({ events }) {
             icon={<FaArrowLeft />}
             onClick={prevSlide}
           />
-          {/* <Button _hover={{ bg: "#ffffff" }} backgroundColor="#ffffff" >
-            <Icon as={FaArrowLeft} w={6} h={6} />
-          </Button> */}
           <Flex
             direction="row"
             overflow="auto"
@@ -143,9 +161,6 @@ export default function Home({ events }) {
             icon={<FaArrowRight />}
             onClick={nextSlide}
           />
-          {/* <Button _hover={{ bg: "#ffffff" }} backgroundColor="#ffffff" _active={{ backgroundColor: "#ffffff" }} >
-            <Icon as={FaArrowRight} w={6} h={6} />
-          </Button> */}
         </Flex>
         {/* Card section End */}
 

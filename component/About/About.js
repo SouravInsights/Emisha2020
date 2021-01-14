@@ -43,7 +43,7 @@ const About = () => {
                         rightIcon={<FaArrowRight />}
                     >
                         Join Our Community
-                </Button>
+                    </Button>
                 </Box>
                 <Box w={["none", "none", "90%", "90%"]}>
                     <Image src="MainBg.png" />

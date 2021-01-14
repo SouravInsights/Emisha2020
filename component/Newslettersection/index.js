@@ -42,14 +42,21 @@ const Newsletter = () => {
                 columns={{ sm: 2, md: 4 }}
                 spacing={4}
             >
-                <FormControl id="email" >
-                    <Input placeholder="example@gmail.com" borderRadius="10px" backgroundColor="#ffffff" />
+                <FormControl id="email" size={["md", "md", "xl", "xl"]} >
+                    <Input
+                        placeholder="example@gmail.com"
+                        borderRadius="10px"
+                        backgroundColor="#ffffff"
+                    />
                 </FormControl>
                 <Button
-                    size="md"
+                    color="black"
+                    py="3"
+                    px="6"
+                    lineHeight="1"
+                    borderRadius="10px"
                     bg="white"
                     outline="none"
-                    borderRadius="10px"
                 >
                     Subscribe
                  </Button>
