@@ -80,8 +80,8 @@ export default function Home({ events }) {
 
         <LandingLayout zIndex="2">
           <Hero
-            title="We never grow alone, but always with a"
-            subheading="Community."
+            title="We never grow alone, but always with a Community."
+           
             subtitle="At Emisha, We thrive to create a true community where everyone can grow together."
             image="https://res.cloudinary.com/emishalabs/image/upload/v1610639213/Emisha%202021/MainBG_rddbwd.png"
             ctaText="Join Our Community"
