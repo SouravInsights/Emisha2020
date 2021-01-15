@@ -71,7 +71,7 @@ export default function Home({ events }) {
       <Flex
         className={styles.bimage}
         direction="column"
-        px={['30px', '30px', '80px', '120px']}
+        px={['10px', '30px', '80px', '120px']}
         justifyContent="space-between"
       >
 
