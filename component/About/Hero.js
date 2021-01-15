@@ -10,10 +10,10 @@ import {
     Text,
     Link
 } from "@chakra-ui/core";
-import { FaDiscord } from 'react-icons/fa';
 
 export default function Hero({
     title,
+    subheading,
     subtitle,
     image,
     ctaLink,
@@ -44,9 +44,19 @@ export default function Hero({
                     fontWeight="extrabold"
                     color="gray.250"
                     textAlign={["center", "center", "left", "left"]}
-                    zIndex="2"
                 >
                     {title}
+                </Heading>
+                <Heading
+                    as="h1"
+                    fontSize={['4xl', '4xl', '4xl', '5xl']}
+                    lineHeight="1"
+                    fontWeight="extrabold"
+                    color="blue.50"
+                    as="u"
+                    textAlign={["center", "center", "left", "left"]}
+                >
+                    {subheading}
                 </Heading>
                 <Heading
                     as="h2"
@@ -85,6 +95,7 @@ export default function Hero({
 
 Hero.propTypes = {
     title: PropTypes.string,
+    subheading: PropTypes.string,
     subtitle: PropTypes.string,
     image: PropTypes.string,
     ctaText: PropTypes.string,

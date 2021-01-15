@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Flex, IconButton, Heading, Stack, Avatar } from '@chakra-ui/core'
+import { Box, Flex, IconButton, Heading, Stack, Avatar } from '@chakra-ui/core'
 import { FaArrowLeft, FaArrowRight, FaDiscord } from 'react-icons/fa';
 import { GraphQLClient } from "graphql-request";
 import Head from 'next/head'
 import NavBar from '../component/Navbar/Header'
-import Footer from '../component/Footer'
-import Newsletter from '../component/Newslettersection'
+import Footer from '../component/Footer/Footer'
+import Newsletter from '../component/Newslettersection/Newsletter'
 import Card from '../component/Card/Card'
 import CardHeader from '../component/Card/CardHeader';
 import CardBody from '../component/Card/CardBody';
@@ -76,9 +76,12 @@ export default function Home({ events }) {
       >
 
         {/* About section */}
-        <LandingLayout zIndex="1">
+        <Box className={styles.bimageleft}> </Box>
+
+        <LandingLayout zIndex="2">
           <Hero
-            title="We never grow alone, but always with a Community."
+            title="We never grow alone, but always with a"
+            subheading="Community."
             subtitle="At Emisha, We thrive to create a true community where everyone can grow together."
             image="https://res.cloudinary.com/emishalabs/image/upload/v1610639213/Emisha%202021/MainBG_rddbwd.png"
             ctaText="Join Our Community"
@@ -88,17 +91,18 @@ export default function Home({ events }) {
         </LandingLayout>
 
         {/* Card section */}
-        <Heading zIndex="1" as="h1"
+        <Heading
+          zIndex="2"
+          as="h1"
           fontSize={['4xl', '4xl', '4xl', '4xl']}
           lineHeight="1"
           fontWeight="extrabold"
           color="gray.250"
           textAlign="center"
-          zIndex="2"
         >
           Our Past Events
         </Heading>
-        <Flex zIndex="1" direction="row" my="20px" justifyContent="center"
+        <Flex zIndex="2" direction="row" my="20px" justifyContent="center"
           alignItems="center" >
           <IconButton
             boxShadow="2xl"

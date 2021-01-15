@@ -1,13 +1,10 @@
 import React from 'react';
 import { Image, Box, Divider } from '@chakra-ui/core'
-/* import CardHeader from './CardHeader';
-import CardBody from './CardBody';
-import CardFooter from './CardFooter'; */
 
 const Card = ({ children, header, body, footer, coverImage, ...props }) => {
   return (
     <Box
-      zIndex="1"
+      zIndex="2"
       maxH="600px"
       maxW="280px"
       m="10px"

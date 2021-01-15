@@ -31,16 +31,15 @@ const links = [
 const Footer = (props) => {
   return (
     <Flex
-      w="90%"
-      height={['auto', 'auto', '80px', '80px']}
-      mx="auto"
-      my="60px"
       align="center"
-      justify="space-between"
-      wrap="wrap"
-      padding="1rem"
-      top="0"
-      zIndex="1"
+      justify={{ base: "center", md: "space-around", xl: "space-around" }}
+      direction={{ base: "column-reverse", md: "row" }}
+      wrap="no-wrap"
+      minH="40vh"
+      px={8}
+      mb={5}
+      zIndex="2"
+
       {...props}
     >
       <Box w="160px">

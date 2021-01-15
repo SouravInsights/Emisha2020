@@ -140,7 +140,7 @@
   height: 98px;
   width: 98px;
   background-repeat: no-repeat;
-  z-index: 0;
+  z-index: 1;
   background-color: #f00fff;
   background: url(https://res.cloudinary.com/emishalabs/image/upload/v1610367770/Emisha%202021/Round_kwvjxi.svg);
 }
