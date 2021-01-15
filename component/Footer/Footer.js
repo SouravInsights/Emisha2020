@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Box, Text, Link, Icon, Image } from "@chakra-ui/core";
-import { FaTwitter, FaGithub, FaLinkedin, } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaMedium, } from "react-icons/fa";
 
 const FooterLink = ({ icon, href, label }) => (
 
@@ -13,17 +13,17 @@ const links = [
   {
     icon: FaTwitter,
     label: "Twitter",
-    href: "https://twitter.com/howdyashis",
+    href: "https://twitter.com/emishacommunity",
   },
   {
     icon: FaGithub,
     label: "Github",
-    href: "https://github.com/ashiskumar-1999"
+    href: "https://github.com/EmishaCommunity"
   },
   {
-    icon: FaLinkedin,
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/ashis-kumar-35385b160/",
+    icon: FaMedium,
+    label: "Medium",
+    href: "https://medium.com/emishacommunity",
   }
 
 ]
