@@ -100,7 +100,7 @@ const MenuLinks = ({ isOpen }) => {
 const NavBarContainer = ({ children, ...props }) => {
     return (
         <Flex
-            zIndex="2"
+            zIndex="5"
             boxShadow="xl"
             position="sticky"
             top="0"
